@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import CardList from '../componets/CardList'
 import SearchBox from '../componets/SearchBox'
 import Scroll from '../componets/Scroll'
+import Copyrights from '../componets/Copyrights'
 import '../containers/App.css'
 
 class App extends Component {
@@ -47,6 +48,7 @@ class App extends Component {
                     <Scroll>
                         <CardList Robots={filteredData}></CardList>
                     </Scroll>
+                    <Copyrights></Copyrights>
                 </div>
             )
         }
