@@ -17,11 +17,10 @@ const App = () => {
         fetch('https://jsonplaceholder.typicode.com/users').then(respone => respone.json())
             .then(users => { setRobots(users) })
     }, []);
-
     const onSearchChange = (event) => {
         SetFields(event.target.value)
     }
-    const filteredData = Robots.filter(robots => {
+    const filteredData = Robots.filter((robots) => {
         return robots.name.toLowerCase().includes(SearchField.toLowerCase())
     })
     return (
